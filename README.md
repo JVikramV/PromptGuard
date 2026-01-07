@@ -47,19 +47,37 @@ PromptGuard focuses on:
 - Rule-based + ML hybrid logic
 
 ---
+## 📸 Screenshots
 
-## 📂 Project Structure
-PromptGuard/
-├── backend/
-│ ├── app.py # FastAPI entry point
-│ ├── model.py # ML risk scoring
-│ ├── rules.py # Rule-based checks
-│ ├── decision.py # Final decision logic
-│ └── requirements.txt
-├── frontend/
-│ └── promptguard-ui/
-│ ├── src/
-│ ├── index.html
-│ ├── tailwind.config.js
-│ └── package.json
-└── README.md
+### 🧠 Prompt Analysis Interface
+<img width="1919" height="976" alt="image" src="https://github.com/user-attachments/assets/1ed45fc4-a3e7-48ad-8168-ccfe92b5a94c" />
+
+
+### ❌ Blocked Prompt Example
+<img width="1919" height="964" alt="image" src="https://github.com/user-attachments/assets/39424bd5-a6f0-4307-86cd-a4fc273708c6" />
+
+
+### ✏️ Rewrite Suggestion Example
+<img width="1915" height="867" alt="image" src="https://github.com/user-attachments/assets/60cff99f-07d5-4c10-9499-2e403831ea7a" />
+### ✅Safe Prompt Example
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/73de180d-8398-4186-ba1d-5a17868b2312" />
+
+
+
+
+---
+
+## ⚙️ Run Locally
+
+### Backend
+
+```bash
+cd backend
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app:app --reload
+cd frontend/promptguard-ui
+npm install
+npm run dev
+
