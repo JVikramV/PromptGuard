@@ -80,4 +80,12 @@ python -m venv .venv
 pip install -r requirements.txt
 uvicorn app:app --reload
 
+### Frontend
+
+```bash
+cd frontend/promptguard-ui
+npm install
+npm run dev
+
+
 
